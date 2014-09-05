@@ -8,7 +8,8 @@ Some uses for this program include:
 - Disentangling names (e.g. "John Smith CEO" and "John Smith")
 
 The eventual syntax for the Stata command will be:
-bingsearch varlist [if] [in], URLvar(urlvarname) APIkey(apikeystring) [Site(sitestring) TITLEvar(titlevarname) EXACTphrase] 
+
+<code> bingsearch varlist [if] [in], URLvar(urlvarname) APIkey(apikeystring) [Site(sitestring) TITLEvar(titlevarname) EXACTphrase] </code>
 
 # Description
 For each observation where the value of urlvarname is missing, the *bingsearch* command will concatenate values from varlist and conduct a search on Bing providing the URL of the first result in variable urlvarname, and optionally the title of the first result in variable titlevarname.
